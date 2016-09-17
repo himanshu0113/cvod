@@ -33,6 +33,9 @@
     <ClInclude Include="hist_chk.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="harris.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -51,6 +54,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="hist_chk.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="harris.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

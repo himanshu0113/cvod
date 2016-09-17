@@ -159,7 +159,7 @@ std::string getImageType(int number)
 	return type.str();
 }
 
-int MH()
+int callMH()
 {
 	int i, j;
 	double s = 1.0;

@@ -1,16 +1,16 @@
 
 #include "stdafx.h"
 
-#include "canny.h"
+//#include "canny.h"
 //#include "MH.h"
-#include "hist_chk.h"
+#include "harris.h"
 
 
 int main()
 {
-	Mat src = imread("blur.jpg");
-	callcanny(src);
-	//hist_chk(src);
+	Mat src = imread("line.jpg");
+	//callcanny(src);
+	callharris(src);
 
 	return 0;
 }
