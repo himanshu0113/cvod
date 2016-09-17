@@ -14,4 +14,4 @@ void convolution(Mat im, float **mask, int nr, int nc, float **res, int NR, int 
 void zero_cross(float **lapim, Mat im);
 void marr(double s, Mat im);
 std::string getImageType(int number);
-int callMH();
+int callMH(Mat src);

@@ -159,36 +159,36 @@ std::string getImageType(int number)
 	return type.str();
 }
 
-int callMH()
+int callMH(Mat src)
 {
 	int i, j;
 	double s = 1.0;
-	Mat img1, img2;
+	Mat scr_gray, img2;
 
-	img1 = imread("img3.jpg");
-	imshow("Original", img1);
-	cvtColor(img1, img1, CV_BGR2GRAY);
+	//img1 = imread("img3.jpg");
+	//imshow("Original", img1);
+	cvtColor(src, scr_gray, CV_BGR2GRAY);
 
 	s = 1.2;
 
 	//string str = getImageType(img1.type());
 	//printf("%s", str.c_str());
 
-	img1.copyTo(img2);
+	scr_gray.copyTo(img2);
 
-	marr(s - 0.8, img1);
+	marr(s - 0.8, scr_gray);
 	marr(s + 0.8, img2);
 
-	for (i = 0; i < img1.rows; i++)
-		for (j = 0; j < img1.cols; j++) {
-			if (img1.at<uchar>(i, j)>0 && img2.at<uchar>(i, j)>0)
-				img1.at<uchar>(i, j) = 0;
+	for (i = 0; i < src.rows; i++)
+		for (j = 0; j < src.cols; j++) {
+			if (scr_gray.at<uchar>(i, j)>0 && img2.at<uchar>(i, j)>0)
+				scr_gray.at<uchar>(i, j) = 0;
 			else
-				img1.at<uchar>(i, j) = 255;
+				scr_gray.at<uchar>(i, j) = 255;
 		}
 
 
-	imshow("Filtered", img1);
+	imshow("Filtered", scr_gray);
 	waitKey(0);
 	return 0;
 }
