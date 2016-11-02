@@ -59,8 +59,5 @@
     <ClCompile Include="harris.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="testing_git.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
   </ItemGroup>
 </Project>
