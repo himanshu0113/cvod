@@ -5,11 +5,12 @@
 //#include "MH.h"
 //#include "harris.h"
 #include "fourier_transform.h"
+//#include "hist_chk.h"
 
 
 int main()
 {
-	Mat src = imread("line.jpg");
+	Mat src = imread("img2.jpg");
 	if (!src.data)
 	{
 		printf("Source image not found. Please check the source address.");
@@ -22,6 +23,12 @@ int main()
 	//callharris(src);
 	//callMH(src);
 	callFourier(src);
+	/*hist_chk(src);
 
+	Mat dst;
+	cvtColor(src, src, CV_BGR2GRAY);
+	equalizeHist(src, dst);
+	namedWindow("img", CV_WINDOW_AUTOSIZE);
+	imshow("img", src);*/
 	return 0;
 }

@@ -26,7 +26,7 @@ int hist_chk(Mat src) {
 	int hist_w = 512; int hist_h = 400;
 	int bin_w = cvRound((double)hist_w / histsize);
 
-	Mat histImage(hist_h, hist_w, CV_8UC3, Scalar(0, 0, 0));
+	Mat histImage(hist_h, hist_w, CV_8UC3, Scalar(255, 255, 255));
 
 	/// Normalize the result to [ 0, histImage.rows ]
 	normalize(dst, dst, 0, histImage.rows, NORM_MINMAX, -1, Mat());
@@ -35,7 +35,7 @@ int hist_chk(Mat src) {
 	{
 		line(histImage, Point(bin_w*(i - 1), hist_h - cvRound(dst.at<float>(i - 1))),
 			Point(bin_w*(i), hist_h - cvRound(dst.at<float>(i))),
-			Scalar(255, 0, 0), 2, 8, 0);
+			Scalar(0, 0, 0), 2, 8, 0);
 	}
 
 	/// Display

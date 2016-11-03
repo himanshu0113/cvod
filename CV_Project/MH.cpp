@@ -171,8 +171,8 @@ int callMH(Mat src)
 
 	s = 1.2;
 
-	//string str = getImageType(img1.type());
-	//printf("%s", str.c_str());
+	string str = getImageType(src.type());
+	printf("%s", str.c_str());
 
 	scr_gray.copyTo(img2);
 

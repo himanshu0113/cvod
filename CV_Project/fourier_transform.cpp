@@ -16,7 +16,7 @@ int callFourier(Mat src)
 	Mat src_gray, padded, temp; 
 
 	// Convert the image to grayscale
-	cvtColor(src, src_gray, CV_BGR2GRAY);
+	cvtColor(src, src, CV_BGR2GRAY);
 
 	//expand input image to optimal size
 	int m = getOptimalDFTSize(src.rows);
@@ -29,7 +29,7 @@ int callFourier(Mat src)
 	Mat complexI;
 	merge(planes, 2, complexI);         // Add to the expanded another plane with zeros
 
-	//dft(complexI, complexI);            // this way the result may fit in the source matrix
+	dft(complexI, complexI);            // this way the result may fit in the source matrix
 
 	// compute the magnitude and switch to logarithmic scale
 	// => log(1 + sqrt(Re(DFT(I))^2 + Im(DFT(I))^2))
