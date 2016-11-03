@@ -86,6 +86,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="canny.h" />
+    <ClInclude Include="fourier_transform.h" />
     <ClInclude Include="harris.h" />
     <ClInclude Include="hist_chk.h" />
     <ClInclude Include="MH.h" />
@@ -95,6 +96,7 @@
   <ItemGroup>
     <ClCompile Include="canny.cpp" />
     <ClCompile Include="canny_edge_detection.cpp" />
+    <ClCompile Include="fourier_transform.cpp" />
     <ClCompile Include="harris.cpp" />
     <ClCompile Include="hist_chk.cpp" />
     <ClCompile Include="main.cpp" />
