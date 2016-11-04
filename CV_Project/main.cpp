@@ -4,13 +4,13 @@
 //#include "canny.h"
 //#include "MH.h"
 //#include "harris.h"
-#include "fourier_transform.h"
+//#include "fourier_transform.h"
 //#include "hist_chk.h"
-
+#include "sift.h"
 
 int main()
 {
-	Mat src = imread("img2.jpg");
+	Mat src = imread("shapes.jpg");
 	if (!src.data)
 	{
 		printf("Source image not found. Please check the source address.");
@@ -22,10 +22,11 @@ int main()
 	//callcanny(src);
 	//callharris(src);
 	//callMH(src);
-	callFourier(src);
-	/*hist_chk(src);
+	//callFourier(src);
+	//hist_chk(src);
+	callSift(src);
 
-	Mat dst;
+	/*Mat dst;
 	cvtColor(src, src, CV_BGR2GRAY);
 	equalizeHist(src, dst);
 	namedWindow("img", CV_WINDOW_AUTOSIZE);

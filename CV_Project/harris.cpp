@@ -16,9 +16,9 @@ int callharris(Mat src)
 		return -1;
 	}
 
-	blocksize = 5;
-	k = 0.04;
-	ksize = 7;
+	blocksize = 3;
+	k = 0.01;
+	ksize = 3;
 
 	/// Convert the image to grayscale
 	cvtColor(src, harris_src_gray, CV_BGR2GRAY);

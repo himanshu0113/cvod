@@ -90,6 +90,7 @@
     <ClInclude Include="harris.h" />
     <ClInclude Include="hist_chk.h" />
     <ClInclude Include="MH.h" />
+    <ClInclude Include="sift.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
@@ -101,6 +102,7 @@
     <ClCompile Include="hist_chk.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="MH.cpp" />
+    <ClCompile Include="sift.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
