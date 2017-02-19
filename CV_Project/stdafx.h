@@ -9,11 +9,13 @@
 
 #include <stdio.h>
 #include <conio.h> // for getch()
+#include <iostream>
 #include <tchar.h>
 #include "opencv2/highgui/highgui.hpp"
 #include "opencv2/imgproc/imgproc.hpp"
 
 using namespace cv;
+using namespace std;
 
 
 

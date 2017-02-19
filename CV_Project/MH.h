@@ -1,9 +1,7 @@
-#include <iostream>
 #include <stdio.h>
 #include <math.h>
 #include "opencv/cv.h"
 
-using namespace std;
 
 float norm(float x, float y);
 float distance(float a, float b, float c, float d);

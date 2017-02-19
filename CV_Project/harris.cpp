@@ -16,8 +16,8 @@ int callharris(Mat src)
 		return -1;
 	}
 
-	blocksize = 3;
-	k = 0.01;
+	blocksize = 2;
+	k = 0.05;
 	ksize = 3;
 
 	/// Convert the image to grayscale
