@@ -3,13 +3,13 @@
 //#include "canny.h"
 //#include "MH.h"
 //#include "harris.h"
-#include "fourier_transform.h"
+//#include "fourier_transform.h"
 //#include "hist_chk.h"
-//#include "sift.h"
+#include "tomasi.h"
 
 int main()
 {
-	Mat src = imread("line.jpg");
+	Mat src = imread("cube1.jpg");
 	if (!src.data)
 	{
 		printf("Source image not found. Please check the source address.");
@@ -21,9 +21,9 @@ int main()
 	//callcanny(src);
 	//callharris(src);
 	//callMH(src);
-	callFourier(src);
+	//callFourier(src);
 	//hist_chk(src);
-	//callSift(src);
+	calltomasi(src);
 
 	/*Mat dst;
 	cvtColor(src, src, CV_BGR2GRAY);

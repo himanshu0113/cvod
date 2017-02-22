@@ -9,15 +9,15 @@ int callharris(Mat src)
 
 	int blocksize, ksize;
 	double k;
-	int thresh = 200;
+	int thresh = 100;
 
 	if (!src.data)
 	{
 		return -1;
 	}
 
-	blocksize = 2;
-	k = 0.05;
+	blocksize = 4;
+	k = 0.04;
 	ksize = 3;
 
 	/// Convert the image to grayscale

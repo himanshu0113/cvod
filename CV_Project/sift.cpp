@@ -10,7 +10,7 @@ int callSift(Mat src)
 	Feature2D detector;
 	std::vector<KeyPoint> keypoints;
 
-	detector.detectAndCompute(src_gray, noArray(), keypoints, dst);
+	detector.detectAndCompute(src_gray, noArray(), keypoints, dst, false);
 
 	drawKeypoints(src_gray, keypoints, dst);
 	namedWindow("SIFT", CV_WINDOW_AUTOSIZE);
