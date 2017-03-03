@@ -42,6 +42,9 @@
     <ClInclude Include="tomasi.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="SURF.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">

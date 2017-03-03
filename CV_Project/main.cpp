@@ -10,7 +10,8 @@
 int main()
 {
 	Mat src = imread("cube1.jpg");
-	if (!src.data)
+	Mat src2 = imread("cube1.jpg");
+	if (!src.data || !src2.data)
 	{
 		printf("Source image not found. Please check the source address.");
 		_getch();
@@ -18,6 +19,7 @@ int main()
 		//scanf("%c", &ch);
 		return -1;
 	}
+
 	//callcanny(src);
 	//callharris(src);
 	//callMH(src);
