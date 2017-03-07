@@ -74,5 +74,8 @@
     <ClCompile Include="tomasi.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="SURF.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
