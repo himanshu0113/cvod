@@ -100,7 +100,7 @@
       <PrecompiledHeader>Use</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions);_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
       <AdditionalIncludeDirectories>C:\opencv\build\install\include</AdditionalIncludeDirectories>
     </ClCompile>
@@ -139,7 +139,7 @@
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions);_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
       <AdditionalIncludeDirectories>C:\opencv\build\install\include</AdditionalIncludeDirectories>
     </ClCompile>
@@ -157,6 +157,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="canny.h" />
+    <ClInclude Include="CapFrames.h" />
     <ClInclude Include="fourier_transform.h" />
     <ClInclude Include="harris.h" />
     <ClInclude Include="hist_chk.h" />
@@ -169,6 +170,7 @@
   <ItemGroup>
     <ClCompile Include="canny.cpp" />
     <ClCompile Include="canny_edge_detection.cpp" />
+    <ClCompile Include="CapFrames.cpp" />
     <ClCompile Include="fourier_transform.cpp" />
     <ClCompile Include="harris.cpp" />
     <ClCompile Include="hist_chk.cpp" />

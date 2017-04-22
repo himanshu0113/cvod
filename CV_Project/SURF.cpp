@@ -164,6 +164,16 @@ void callsurf(Mat src1, Mat src2)
     std::vector<Point2f> corner;
     Mat img_matches = drawGoodMatches(img1.getMat(ACCESS_READ), img2.getMat(ACCESS_READ), keypoints1, keypoints2, matches, corner);
 
+	//-- Save descriptors in file
+	FileStorage store("keypoints_surf.yml", FileStorage::WRITE);
+	write(store, "keypoints1", keypoints1);
+	write(store, "descriptor1", descriptors1);
+	store.release();
+
+	//-- saving descriptors as images ----- scale the descriptor va;ues and then save
+	//normalize(descriptors1, descriptors1, 0, 1, NORM_MINMAX);
+	imwrite("descriptor_1.jpeg", descriptors1);
+
     //-- Show detected matches
 
     namedWindow("surf matches", 0);

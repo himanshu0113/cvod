@@ -45,6 +45,9 @@
     <ClInclude Include="SURF.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="CapFrames.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -75,6 +78,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="SURF.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CapFrames.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
