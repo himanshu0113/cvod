@@ -172,7 +172,18 @@ void callsurf(Mat src1, Mat src2)
 
 	//-- saving descriptors as images ----- scale the descriptor va;ues and then save
 	//normalize(descriptors1, descriptors1, 0, 1, NORM_MINMAX);
-	imwrite("descriptor_1.jpeg", descriptors1);
+	double min, max;
+	minMaxLoc(descriptors1, &min, &max);
+	cout << min << endl << max;
+	descriptors1 += abs(min);
+	descriptors1 *= 255;
+	imwrite("images/descriptor_1.jpeg", descriptors1);
+
+	minMaxLoc(descriptors2, &min, &max);
+	cout << min << endl << max;
+	descriptors2 += abs(min);
+	descriptors2 *= 255;
+	imwrite("images/descriptor_2.jpeg", descriptors2);
 
     //-- Show detected matches
 
